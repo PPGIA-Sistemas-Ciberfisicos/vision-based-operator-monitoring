@@ -1,0 +1,5 @@
+ultralytics==8.4.52
+scikit-learn
+numpy<2
+PyYAML
+matplotlib

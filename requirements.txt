@@ -1,0 +1,8 @@
+ultralytics==8.4.52
+mediapipe==0.10.21
+opencv-contrib-python==4.11.0.86
+numpy<2
+pandas
+scikit-learn
+matplotlib
+Pillow
