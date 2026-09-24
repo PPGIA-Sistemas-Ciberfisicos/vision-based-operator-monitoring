@@ -21,8 +21,6 @@ started.
 
 ![Architecture of the proposed operator-monitoring system](assets/system_architecture.png)
 
-*Figure 1 from the article: input preprocessing, parallel posture and operator-detection pipelines, state classification, and alert prioritization.*
-
 ## Workflow
 
 1. `1_configure_roi.py` selects the operator region of interest (ROI) from a representative video.
