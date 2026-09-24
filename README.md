@@ -91,3 +91,33 @@ It updates `outputs/head_pose_validation/head_tilt_last_60_frames.png` and `outp
 ## Reproducibility note
 
 These scripts retain the final implementation that produced the annotated evaluation workflow. The paper describes some parameters differently (for example, a 20° posture threshold and YOLO-based absence detection); this repository does not claim that those details were implemented by the historical final script.
+
+## Citation
+
+If you use this code in your research, please cite the complementary
+mobile-phone-detection paper:
+
+```bibtex
+@InProceedings{10.1007/978-3-032-32023-0_50,
+author="Lopes, Eduardo Lamy
+and Pellenz, Marcelo Eduardo
+and Teixeira, Marco Antonio Sim{\~o}es",
+editor="Rocha, Alvaro
+and Adeli, H.
+and Moreira, Fernando",
+title="Mobile Phone Detection for Mining Teleoperation Safety",
+booktitle="Recent Trends and Challenges in Information Systems and Technologies",
+year="2027",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="615--625",
+abstract="Although remote operation improves operator safety by removing personnel from hazardous mining environments, it introduces critical challenges in maintaining situational awareness across multiple distraction vectors. This work presents an integrated monitoring framework that combines four safety validations: posture analysis, hand position tracking, operator presence detection, and mobile phone detection. Initial deployment revealed a critical performance gap: while three behavioral validations operated effectively, standard object detectors failed dramatically for phone detection, achieving only 0.03 F1-score. This deficit motivated a systematic investigation that led to a comprehensive comparative analysis of all five YOLO11 variants (n, s, m, l, x) retrained on 2,879 domain-specific images using 5-fold cross-validation to ensure rigorous validation. Our key finding is that all variants achieved statistically equivalent performance (mAP@0.5{\thinspace}>{\thinspace}95{\%}, p{\thinspace}={\thinspace}0.958), establishing YOLO11-Nano as the optimal choice due to its 415 FPS throughput and minimal 4.2 MB footprint. The integrated four-component framework achieves an overall accuracy of 87{\%} while implementing a risk-based alert hierarchy that prioritizes mobile phone use (the most cognitively engaging distraction) above posture deviation, hands-off controls, and operator absence. This work offers mining operations a scalable, efficiency-optimized solution for comprehensive distraction monitoring.",
+isbn="978-3-032-32023-0"
+}
+```
+
+## License
+
+This repository is released under the **MIT License**.<br>
+You are free to use, modify, and distribute this code for research and educational purposes, provided proper attribution is given.<br>
+See the [LICENSE](LICENSE) file for more details.
