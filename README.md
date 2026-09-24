@@ -1,5 +1,8 @@
 # Vision-Based Operator Monitoring for Safety in Mining Teleoperation
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Paper: Mobile Phone Detection](https://img.shields.io/badge/Paper-Mobile_Phone_Detection-blue.svg)](https://doi.org/10.1007/978-3-032-32023-0_50)
+
 This repository preserves the original operator-monitoring implementation used
 for the article evaluation.
 
